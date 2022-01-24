@@ -1,0 +1,73 @@
+@keyframes Spaceship_rise {
+    from {bottom: -150px;}
+    to {bottom: 100px;}
+}
+@keyframes Object_Fall{
+    from {top: -100px;}
+    to {top: 110vh;}
+}
+@keyframes Winner {
+    from {bottom:100px;}
+    to {bottom: 58vh;left: 50vw;}
+}
+@keyframes Moon_Appear {
+    from {top:-150px;}
+    to {top: 40vh;}
+}
+div{
+    display: inline-block;
+}
+#Background{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -10px;
+    width: 100vw;
+    height: 100vh;
+}
+#Player{
+    position: fixed;
+    height: 120px;
+    width: 80px;
+    bottom: 100px;
+    left: 47.5vw;
+}
+#Start {
+    position: relative;
+    height: 140px;
+    width: 200px;
+    top: 35vh;
+    left: 42vw;
+}
+#Instruction {
+    position: relative;
+    height: 140px;
+    width: 250px;
+    top: 55vh;
+    left: 24vw;
+}
+.Object{
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    animation: Object_Fall 5s 2;
+}
+#Moon{
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    left: 40vw;
+    top: -150px;
+    visibility: hidden;
+}
+#Astronaut{
+    position: fixed;
+    height: 140px;
+    width: 120px;
+    top: 28vh;
+    left: 46vw;
+    visibility: hidden;
+}
+#Winning_Text{
+    visibility: hidden;
+}
