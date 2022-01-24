@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AstroDodger By Prabal Bhattacharyya</title>
+        <link rel="stylesheet" href="Scripts/style.css">
+    </head>
+    <body>
+        <div id="Game-Over-Background" style="position:fixed;">
+            <h1 style="position: fixed;top: 20vh;left: 40vw;font-size: 64px;" id="Score">Score: </h1>
+            <h1 style="position: fixed;top: 40vh;left: 40vw;font-size: 64px;">You Lost!</h1>
+            <button style="position: fixed;top: 60vh;left: 40vw;font-size: 32px;" onclick="location.reload()">Retry!</button>
+        </div>
+        <div id="Background-Div">
+            
+            <img src="Pictures/Background.png" id="Background">
+            <img id="Start" src="Pictures/StartButton.png" onclick="StartGame()">
+            <img id="Instruction"  src="Pictures/Instruction.png" onclick="location.href='Scripts/Instructions.html'">
+            <div id="Player-Div">
+                <img src="Pictures/Player_Spaceship.png" id="Player">
+            </div>
+            <div id="Winning-Background">
+                <img src="Pictures/Moon.png" id="Moon">
+                <img src="Pictures/Astronaut.png" id="Astronaut">
+                <div id="Winning_Text">
+                    <h1 style="position: fixed;top: 50vh;left: 42vw;font-size: 64px;">You Win!</h1>
+                    <button style="position: fixed;top: 70vh;left: 43vw;font-size: 32px;" onclick="location.reload()">Play Again!</button>
+                </div>
+            </div>
+            <div id="Objects-Div">
+                
+            </div>
+        </div>
+        <script src="Scripts/main.js"></script>
+    </body>
+</html>
